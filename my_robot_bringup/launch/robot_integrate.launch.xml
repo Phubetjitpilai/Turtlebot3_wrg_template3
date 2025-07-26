@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg = "my_robot" exec="navigator_node"/>
+    <node pkg = "my_robot" exec="detection_node"/>
+    <node pkg = "my_robot" exec="servo_control_node"/>
+</launch>
