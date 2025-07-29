@@ -41,3 +41,4 @@
 - 💬 **[TurtleBot category from ROS Community](https://discourse.ros.org/c/turtlebot/)**
 # Turtlebot3_wrg_template2
 # Turtlebot3_wrg_template3
+# Turtlebot3_wrg_template3
