@@ -9,7 +9,7 @@ class ServoControlNode(Node):
     def __init__(self):
         super().__init__('servo_control_node')
         # รอรับการแจ้งจาก Node 2 ว่ามีการตรวจจับคน
-        self.servo_sub_reached_points = self.create_subscription(Empty, 'waypoint_reached', self.on_waypoints)
+        self.servo_sub_reached_points = self.create_subscription(Empty, 'waypoint_reached', self.on_waypoints, 10)
         self.task_done_sub = self.create_subscription(Empty,  '/task_completed', self.on_task_completed, 10)
         self.servo_pub_completed = self.create_publisher(Empty, '/servo_completed',10)
 
